@@ -5,12 +5,6 @@ const session = require('express-session'); //session testing
 const path = require('path');
 const cookieParser = require('cookie-parser');
 
-// For routes
-// var routes = require('./routes/index');
-// var users = require('./routes/users');
-
-//var mysqlconn = require('./routes/mysql'); //connection pool test
-//require('./routes/mongodb.js').createrconnectionpool();
 var mongoURL = 'mongodb://localhost:27017/';
 var mongoStore = require("connect-mongo")(session);
 
